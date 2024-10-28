@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+nav {
+    display: block;
+    width: 100vw;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap : 20px;
+    position: absolute;
+    right: 20px;
+}
+
+nav span {
+    font-size: 1rem;
+    padding:10px;
+    
+    transition: all 0.5s;
+}
+.roundicon {
+    transition: all !important;
+}
+span:last-child {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+    border-top: 2px solid red;
+    border-left: 2px solid yellow;
+    border-bottom: 2px solid green;
+    border-right: 2px solid blue;
+}
+span:nth-child(1):hover {
+    text-decoration: underline;
+}
+span:nth-child(2):hover{
+    text-decoration: underline;
+}
+span:last-child:hover{
+    background-color: lightpink;
+    
+}
+.roundicon:hover{
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.container {
+    display: block;
+    width: 60vw;
+    height: 50vh;
+    position: absolute;
+    transform: translate(35%, 50%);
+}
+
+.logo {
+    position: relative;
+    width: 50%;
+    height: 30%;
+    top : 30%;
+    left: 30%;
+    /* background-image: url('chrome://new-tab-page/icons/google_logo.svg'); */
+}
+
+.searchbar {
+    position: relative;
+    top:40%;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    /* background-color: aqua; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px; */
+    /* background-color: aqua; */
+    
+}
+.searchbar img {
+    display: inline-block;
+    width: 4%;
+}
+.searchbar>img:first-child {
+    padding: 12px;   
+    border-radius: 80%;
+    border-top : 1px solid lightgrey;
+    border-left : 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.searchbar img:nth-child(3) {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+.searchbar img:last-child {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#searchbar {
+    position: relative;
+    width: 80%;
+    height: 50px;
+    /* z-index: 0; */
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+}
+
