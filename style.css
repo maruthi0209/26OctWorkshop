@@ -60,7 +60,7 @@ span:last-child:hover{
     width: 60vw;
     height: 50vh;
     position: absolute;
-    transform: translate(35%, 50%);
+    transform: translate(35%, 35%);
 }
 
 .logo {
@@ -100,30 +100,48 @@ span:last-child:hover{
     border-top : 1px solid lightgrey;
     border-left : 1px solid lightgrey;
     border-bottom: 1px solid lightgrey; */
+    position: absolute;
+    top:30%;
+    left: 4% ;
+    z-index: 1;
 }
 .searchbar img:nth-child(3) {
     /* border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey; */
     padding: 10px;
+    position: absolute;
+    top:30%;
+    left: 82% ;
+    z-index: 1;
 }
 .searchbar img:last-child {
     /* border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
     border-radius: 50%; */
+    position: absolute;
+    top:30%;
+    left: 88% ;
+    z-index: 1;
     padding: 10px;
 }
 
 #searchbar {
     position: relative;
-    width: 80%;
+    width: 90%;
     height: 50px;
     /* z-index: 0; */
-    border-top: 1px solid lightgrey;
+    /* border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     border-left: none;
-    border-right: none;
+    border-right: none; */
+    border: 1px solid lightgrey;
     box-shadow: 1px lightgrey;
+    /* border-radius: 10%;    */
+}
+#searchbar::placeholder {
+    position: absolute;
+    left: 8%;
 }
 
 @media screen and (max-width : 500px) {
@@ -158,4 +176,52 @@ span:last-child:hover{
         border-right: 1px solid lightgrey;
     }
 }
+
+.shortcut>ion-icon {
+    font-size: 2rem;
+    position: absolute;
+    top: 100%;
+    left:40%;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 50%;
+    font-weight: 100;
+    color: gray;
+    transition: all 1s;
+}
+.shortcut>p {
+    position: absolute;
+    top: 115%;
+    left: 38%;
+    font-weight: 100;
+    color: slategray;
+    transition: all 1s;
+}
+
+footer {
+    text-align: center;
+    width: 13%;
+    position: absolute;
+    top: 90%;
+    right: 12%;
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    /* border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
+    border-radius: 10%;
+    transition: all 1s;
+}
+footer:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.shortcut>ion-icon:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
 
